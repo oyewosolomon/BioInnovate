@@ -83,38 +83,14 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="bg-blue-800/50 p-3 rounded-lg mr-4">
-                    <MapPin size={24} className="text-blue-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-lg">Research Facilities</h4>
-                    <p className="text-blue-200">Boston Innovation District</p>
-                    <p className="text-blue-200">San Francisco Bay Area</p>
-                    <p className="text-blue-200">Zurich, Switzerland</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-blue-800/50 p-3 rounded-lg mr-4">
-                    <Phone size={24} className="text-blue-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-lg">Phone</h4>
-                    <p className="text-blue-200">+1 (617) 555-0123</p>
-                    <p className="text-blue-200">Mon-Fri 9:00 AM - 5:00 PM EST</p>
-                  </div>
-                </div>
-
+               
                 <div className="flex items-start">
                   <div className="bg-blue-800/50 p-3 rounded-lg mr-4">
                     <Mail size={24} className="text-blue-200" />
                   </div>
                   <div>
                     <h4 className="font-medium text-lg">Email</h4>
-                    <p className="text-blue-200">info@bioinnovatelabs.com</p>
-                    <p className="text-blue-200">partnerships@bioinnovatelabs.com</p>
-                    <p className="text-blue-200">clinicaltrials@bioinnovatelabs.com</p>
+                    <p className="text-blue-200">hello@thebioinnovate.com</p>
                   </div>
                 </div>
 
