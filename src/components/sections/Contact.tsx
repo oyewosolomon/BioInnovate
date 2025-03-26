@@ -71,18 +71,6 @@ const Contact: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-blue-800/50 p-3 rounded-lg mr-4">
-                    <Building size={24} className="text-blue-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-lg">Headquarters</h4>
-                    <p className="text-blue-200">BioInnovate Tower</p>
-                    <p className="text-blue-200">1250 Genome Way</p>
-                    <p className="text-blue-200">Cambridge, MA 02142</p>
-                  </div>
-                </div>
-
                
                 <div className="flex items-start">
                   <div className="bg-blue-800/50 p-3 rounded-lg mr-4">
