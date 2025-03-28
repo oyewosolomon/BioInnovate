@@ -9,10 +9,24 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-xl">B</span>
-              </div>
-              <h3 className="text-xl font-bold">BioInnovate Labs</h3>
+            <svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+              <defs>
+                <style>{`
+                  .cls-3{fill:#77acf1;}
+                  .cls-4{fill:#ffffff;}
+                `}</style>
+              </defs>
+              <g data-name="28. Pile Box" id="_28._Pile_Box">
+                <path className="cls-3" d="M6,16h4a0,0,0,0,1,0,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V16A0,0,0,0,1,6,16Z"/>
+                <path className="cls-3" d="M22,16h4a0,0,0,0,1,0,0v3a1,1,0,0,1-1,1H23a1,1,0,0,1-1-1V16A0,0,0,0,1,22,16Z"/>
+                <path className="cls-3" d="M14,4h4a0,0,0,0,1,0,0V7a1,1,0,0,1-1,1H15a1,1,0,0,1-1-1V4A0,0,0,0,1,14,4Z"/>
+                <path className="cls-4" d="M31,27h-.18A3,3,0,0,0,31,26V18a3,3,0,0,0-3-3H22.82A3,3,0,0,0,23,14V6a3,3,0,0,0-3-3H12A3,3,0,0,0,9,6v8a3,3,0,0,0,.18,1H4a3,3,0,0,0-3,3v8a3,3,0,0,0,.18,1H1a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2ZM11,14V6a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1H12A1,1,0,0,1,11,14Zm6.18,13H14.82A3,3,0,0,0,15,26V18a3,3,0,0,0-.18-1h2.36A3,3,0,0,0,17,18v8A3,3,0,0,0,17.18,27ZM4,27a1,1,0,0,1-1-1V18a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1Zm16,0a1,1,0,0,1-1-1V18a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1Z"/>
+                <path className="cls-4" d="M7,25H6a1,1,0,0,1,0-2H7a1,1,0,0,1,0,2Z"/>
+                <path className="cls-4" d="M23,25H22a1,1,0,0,1,0-2h1a1,1,0,0,1,0,2Z"/>
+                <path className="cls-4" d="M15,13H14a1,1,0,0,1,0-2h1a1,1,0,0,1,0,2Z"/>
+              </g>
+            </svg>
+              <h3 className="text-xl font-bold ml-2">BioInnovate Labs</h3>
             </div>
             <p className="text-gray-400 mb-6">
               Pioneering the future of personalized medicine through genomic innovation and AI-driven research.
