@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Building2, Users, BarChart3, DollarSign } from 'lucide-react';
+import { FaGoogle, FaFacebook, FaApple } from 'react-icons/fa';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -23,6 +25,37 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm" />
       </div>
 
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
+          <div className="bg-white w-full max-w-md mx-4 p-8 rounded-2xl shadow-xl relative">
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl"
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">Get Started</h2>
+            <p className="text-center text-gray-600 mb-6">Login or create an account using:</p>
+
+            <div className="flex flex-col gap-4">
+              <button className="flex items-center justify-center gap-3 px-4 py-3 border rounded-lg hover:bg-gray-100">
+                <FaGoogle className="text-red-500" />
+                Continue with Google
+              </button>
+              <button className="flex items-center justify-center gap-3 px-4 py-3 border rounded-lg hover:bg-gray-100">
+                <FaFacebook className="text-blue-600" />
+                Continue with Facebook
+              </button>
+              <button className="flex items-center justify-center gap-3 px-4 py-3 border rounded-lg hover:bg-gray-100">
+                <FaApple className="text-black" />
+                Continue with Apple
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Content */}
       <div className="relative container mx-auto mt-5 px-4 py-20">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -36,7 +69,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold flex items-center justify-center group transition-all">
+            <button 
+              onClick={() => setShowModal(true)}
+              className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold flex items-center justify-center group transition-all"
+            >
               Get Started
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
